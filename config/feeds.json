@@ -1,0 +1,112 @@
+{
+  "semianalysis": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:53:27.460Z",
+    "feedUrl": "https://newsletter.semianalysis.com/feed"
+  },
+  "semiengineering": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:50:48.688Z",
+    "feedUrl": "https://semiengineering.com/feed/"
+  },
+  "eetimes": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:50:57.453Z",
+    "feedUrl": "https://www.eetimes.com/feed/"
+  },
+  "semiwiki": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:00.331Z",
+    "feedUrl": "https://semiwiki.com/feed/"
+  },
+  "chipsandcheese": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:01.440Z",
+    "feedUrl": "https://chipsandcheese.com/feed"
+  },
+  "servethehome": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:03.377Z",
+    "feedUrl": "https://www.servethehome.com/feed/"
+  },
+  "hpcwire": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:51:06.203Z"
+  },
+  "theregister-dc": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:51:11.390Z"
+  },
+  "tomshardware": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:13.888Z",
+    "feedUrl": "https://www.tomshardware.com/feeds.xml"
+  },
+  "ieee-spectrum": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:14.501Z",
+    "feedUrl": "https://spectrum.ieee.org/feeds/feed.rss"
+  },
+  "semi-mi": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:51:27.685Z",
+    "feedUrl": "https://www.semi.org/rss.xml"
+  },
+  "sia": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:51:45.016Z",
+    "newsPageAllowed": true
+  },
+  "trendforce": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:51:50.100Z",
+    "newsPageAllowed": true
+  },
+  "iea": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:51:58.952Z",
+    "newsPageAllowed": true
+  },
+  "stanford-ai-index": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:52:12.126Z",
+    "newsPageAllowed": true
+  },
+  "ifr": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:52:19.386Z",
+    "newsPageAllowed": true
+  },
+  "wef-publications": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:52:27.679Z",
+    "newsPageAllowed": false
+  },
+  "visualcapitalist": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:52:28.438Z",
+    "feedUrl": "https://www.visualcapitalist.com/feed/"
+  },
+  "voronoi": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:52:34.448Z"
+  },
+  "ourworldindata": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:52:36.044Z",
+    "feedUrl": "https://ourworldindata.org/atom.xml"
+  },
+  "informationisbeautiful": {
+    "status": "ok",
+    "checkedAt": "2026-10-26T16:52:38.705Z",
+    "feedUrl": "https://informationisbeautiful.net/feed"
+  },
+  "iea-data": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:52:55.611Z"
+  },
+  "wef-infographics": {
+    "status": "no_feed",
+    "checkedAt": "2026-10-26T16:53:01.799Z"
+  }
+}
