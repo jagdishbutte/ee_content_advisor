@@ -1,0 +1,26 @@
+#!/bin/sh
+# Blocks commits that would leak secrets: any .env* file except .env.example, or
+# env.example / .env.example with a value filled in for a secret key.
+fail=0
+
+for f in $(git diff --cached --name-only --diff-filter=ACMR); do
+  case "$(basename "$f")" in
+    .env.example) ;;
+    .env*) echo "pre-commit: refusing to commit $f (env files hold secrets)"; fail=1 ;;
+  esac
+done
+
+for f in env.example .env.example; do
+  git cat-file -e ":$f" 2>/dev/null || continue
+  filled=$(git show ":$f" | grep -E '^(SUPABASE_SERVICE_ROLE_KEY|LLM_API_KEY|TELEGRAM_BOT_TOKEN|TELEGRAM_CHAT_ID|DASHBOARD_PASSWORD|CRON_SECRET)=.+' | cut -d= -f1)
+  if [ -n "$filled" ]; then
+    echo "pre-commit: $f has real values for: $(echo $filled). Keep them blank; put real values in .env.local."
+    fail=1
+  fi
+  if git show ":$f" | grep -qE '^SUPABASE_URL=https://[a-z0-9]{20}\.supabase\.co'; then
+    echo "pre-commit: $f has a real SUPABASE_URL. Use https://your-project.supabase.co."
+    fail=1
+  fi
+done
+
+exit $fail
